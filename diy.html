@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>isha index :: diy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isha Index, diy page includes easy to intermediate crafting, do it yourselfs, and macrame bracelets">
+</head>
+<body>
+
+    <header>
+        [isha index]
+    </header>
+
+    <nav>
+        <a href="index.html">home</a> &nbsp;
+        <a href="blog.html">blog</a> &nbsp;
+        <a href="diy.html">diy</a> &nbsp;
+
+        <div class="dropdown">
+            <button class="dropbutton">travel</button>
+            <div class="dropdown-content">
+                <a href="travel.html">my travel stuff</a>
+                <a href="https://www.lonelyplanet.com/">other inspo (external)</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">study</button>
+            <div class="dropdown-content">
+                <a href="study.html">my study stuff</a>
+                <a href="https://www.youtube.com/channel/UCLE6bDbrn5kNG94-1VlH_XA/videos">other inspo (external)</a>
+            </div>
+        </div>
+
+        <a href="cooking.html">cooking</a> &nbsp;
+        <a href="contact.html">contact</a> &nbsp;
+    </nav>
+
+    <div id="diyhero"> <p class="center large">diy</p> </div>
+
+    <br />
+
+    <main>
+
+        <div id="wrapper">
+
+            <section class="feature">
+                <h1>[featured diys - friendship bracelets]</h1>
+                <div>
+                    <img class="listimg slide" src="diys/diy1.jpg" alt="beaded sqare knot" />
+                    <img class="listimg slide" src="diys/diy2.jpg" alt="triangle argyle florar" />
+                    <img class="listimg slide" src="diys/diy3.jpg" alt="beaded braid" />
+                    <img class="listimg slide" src="diys/diy4.jpg" alt="simple triangle" />
+                    <img class="listimg slide" src="diys/diy5.jpg" alt="braided stitch" />
+                    <p class="writing">
+                        This where I will be showcasing some of my favorite crafts and how you can create them too! This week is all about friendship
+                        bracelets. I have always loved making friendship bracelets because it was a fun thing I got to do with my friends and they
+                        always turned out super cute even if they weren't perfect. Make a memory by making a frienship bracelet with someone who's
+                        friendship you cherish.
+                    </p>
+                </div>
+            </section>
+
+            <!-- script for slide show -->
+            <script>
+                var index = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var images = document.getElementsByClassName("slide");
+                    for (i = 0; i < images.length; i++) {
+                        images[i].style.display = "none";
+                    }
+                    index++;
+                    if (index > images.length) { index = 1 }
+                    images[index - 1].style.display = "block";
+                    setTimeout(carousel, 2500); // Change image every 2 seconds
+                }
+            </script>
+
+            <section class="sidebar">
+                <h2>[poll]</h2>
+                <h5>which dish is your favorite?</h5>
+                <form method="post" action="#">
+                    <fieldset>
+                        <input type="checkbox" name="favorite_pattern" value="beaded_braid">Beaded Braid<br />
+                        <input type="checkbox" name="favorite_pattern" value="chevron">Chevron <br />
+                        <input type="checkbox" name="favorite_pattern" value="zig-zag">Zig-Zag <br />
+                        <input type="checkbox" name="favorite_pattern" value="braided_stitch">Braided Stich <br /> <br />
+                        <input type="submit" value="Submit"> <br />
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <section class="content">
+                <table>
+                    <tr>
+                        <th colspan="3">[try these simple patterns]</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Simple Triangle</h3>
+                            <img class="listimg" src="diys/diy4.jpg" alt="simple triangle pattern bracelet" />
+                        </td>
+                        <td>
+                            <b>Materials:</b>
+                            <ul>
+                                <li>3 90cm embrodery floss red</li>
+                                <li>3 90cm embrodery floss white</li>
+                                <li>scissors</li>
+                                <li>clipboard/tape</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Steps:</b>
+                            <ol>
+                                <li>Cut all the pieces of thread, you can make them smaller depending on your wrist size</li>
+                                <li>Tie a knot about 1.5-2 inches down one end. Then braid the shorter end, with another knot at the end</li>
+                                <li>
+                                    Then fasten this end of the bracelet some place. I like to take a clipboard and stick the bracelet end into the hook,
+                                    or you can simply take a piece of tape and tape the end to your workplace
+                                </li>
+                                <li>Then with the thrird left string make a forwards, backwards knot onto the next string</li>
+                                <li>Then from the left make forward knots until the last one of that color</li>
+                                <li>Then from the right make backward knots until the last one of that color</li>
+                                <li>Then make a backwards forwards knot onto the next string</li>
+                                <li>Continue this pattern until the desired length</li>
+                                <li>If you get lost just remember you're making triangle shapes with each color</li>
+                            </ol>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Beaded Braid</h3>
+                            <img class="listimg" src="diys/diy3.jpg" alt="beaded braid bracelet" />
+                        </td>
+                        <td>
+                            <b>Materials:</b>
+                            <ul>
+                                <li>3 40cm embroidery floss</li>
+                                <li>scissors</li>
+                                <li>15-20 beads</li>
+                                <li>clipboard/tape</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Steps:</b>
+                            <ol>
+                                <li>
+                                    Cut the pieces of thread, if you have thicker beads or want a thinker bracelet you
+                                    can double up on the string
+                                </li>
+                                <li>Gather the string and tie a knot at the very end of the strings</li>
+                                <li>Fasten the bracelet to a clipboard or piece of tape</li>
+                                <li>For about 1-1.5 inches braid the strands like a normal 3 strand braid</li>
+                                <li>Then after each braid slip a bead on to the middle string</li>
+                                <li>
+                                    Then continue braiding like normal, make sure not to braid too tight around the beads or they might pop
+                                    out rather than the embedded look
+                                </li>
+                                <li>Continue this for the desired length then end with another knot</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+
+        <br />
+
+        <div class="peachBorder">
+            <h4>Intrested in Buying?</h4>
+            <h3>here's some info :)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img class="listimg" src="diys/diy2.jpg" alt="triangle argyle florar bracelet"/>
+                    </td>
+                    <td>
+                        <p class="writing">
+                            This is a triangle argyle florar bracelet <br />
+                            Price: $3.00
+                        </p>
+                    </td>
+                    <td>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="ishagsathe@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="Triangle Argyle Florar Bracelet">
+                            <input type="hidden" name="item_number" value="diy2">
+                            <input type="hidden" name="amount" value="3.00">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="button_subtype" value="services">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="tax_rate" value="5.600">
+                            <input type="hidden" name="shipping" value="5.00">
+                            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                            <input type="image" src="paypalbtn.png" width="150" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="listimg" src="diys/diy1.jpg" alt="beaded square knot bracelet"/>
+                    </td>
+                    <td>
+                        <p class="writing">
+                            This is a beaded square knot bracelet <br />
+                            Price: $3.00
+                        </p>
+                    </td>
+                    <td>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="ishagsathe@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="Beaded Square Knot">
+                            <input type="hidden" name="item_number" value="diy1">
+                            <input type="hidden" name="amount" value="3.00">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="button_subtype" value="services">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="tax_rate" value="5.600">
+                            <input type="hidden" name="shipping" value="5.00">
+                            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                            <input type="image" src="paypalbtn.png" width="150" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        </form>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="listimg" src="diys/diy5.jpg" alt="braided stich bracelet"/>
+                    </td>
+                    <td>
+                        <p class="writing">
+                            This is a braided stitch bracelet <br />
+                            Price: $3.50
+                        </p>
+                    </td>
+                    <td>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <input type="hidden" name="business" value="ishagsathe@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <input type="hidden" name="item_name" value="Braided Stitch Bracelet">
+                            <input type="hidden" name="item_number" value="diy5">
+                            <input type="hidden" name="amount" value="3.50">
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="button_subtype" value="services">
+                            <input type="hidden" name="no_note" value="0">
+                            <input type="hidden" name="tax_rate" value="5.600">
+                            <input type="hidden" name="shipping" value="5.00">
+                            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                            <input type="image" src="paypalbtn.png" width="150" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        </form>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+
+    <footer>
+        Copyright &copy; 2022 Isha Index<br>
+        <a href="mailto:ishagsathe@gmail.com">ishagsathe@gmail.com</a>
+    </footer>
+
+
+</body>
+</html>

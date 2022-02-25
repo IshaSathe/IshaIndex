@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>isha index :: cooking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isha Index, cooking page includes easy to intermediate dish recipies, vegitarian and nut free, and food reviews">
+</head>
+<body>
+
+    <header>
+        [isha index]
+    </header>
+
+    <nav>
+        <a href="index.html">home</a> &nbsp;
+        <a href="blog.html">blog</a> &nbsp;
+        <a href="diy.html">diy</a> &nbsp;
+
+        <div class="dropdown">
+            <button class="dropbutton">travel</button>
+            <div class="dropdown-content">
+                <a href="travel.html">my travel stuff</a>
+                <a href="https://www.lonelyplanet.com/">other inspo (external)</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">study</button>
+            <div class="dropdown-content">
+                <a href="study.html">my study stuff</a>
+                <a href="https://www.youtube.com/channel/UCLE6bDbrn5kNG94-1VlH_XA/videos">other inspo (external)</a>
+            </div>
+        </div>
+
+        <a href="cooking.html">cooking</a> &nbsp;
+        <a href="contact.html">contact</a> &nbsp;
+    </nav>
+
+    <div id="cookinghero"> <p class="center large">cooking</p> </div>
+
+    <br />
+
+    <main>
+
+       
+
+        <div id="wrapper">
+
+            <section class="feature">
+                <h1>[featured dishes]</h1>
+                <div>
+                    <img class="listimg slide" src="dishes/dish1.jpg" alt="naan" />
+                    <img class="listimg slide" src="dishes/dish2.jpg" alt="rice" />
+                    <img class="listimg slide" src="dishes/dish3.jpg" alt="somosa chat" />
+                    <img class="listimg slide" src="dishes/dish4.jpg" alt="vada" />
+                    <img class="listimg slide" src="dishes/dish5.jpg" alt="mozzerlla sticks" />
+                    <p class="writing">
+                        Most of the recipies on this page have come from me experimenting with indian dishes and trying to make them easier for me while
+                        also preserving the taste. The rest of the recipies come from me wanting to try something new. And it is all vegitarian for my vegitarians
+                        out there. Have fun cooking!
+                    </p>
+                </div>
+            </section>
+
+            <!-- script for slide show -->
+            <script>
+                var index = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var images = document.getElementsByClassName("slide");
+                    for (i = 0; i < images.length; i++) {
+                        images[i].style.display = "none";
+                    }
+                    index++;
+                    if (index > images.length) { index = 1 }
+                    images[index - 1].style.display = "block";
+                    setTimeout(carousel, 2500); // Change image every 2 seconds
+                }
+            </script>
+
+            <section class="sidebar">
+                <h2>[poll]</h2>
+                <h5>which dish is your favorite?</h5>
+                <form method="post" action="#">
+                    <fieldset>
+                        <input type="checkbox" name="favorite_dish" value="naan">Naan<br />
+                        <input type="checkbox" name="favorite_dish" value="vada">Vada <br />
+                        <input type="checkbox" name="favorite_dish" value="jalapeno_mozzerlla_sticks">Jalapeno Mozzerlla Sticks <br />
+                        <input type="checkbox" name="favorite_dish" value="rice">Rice <br />
+                        <input type="checkbox" name="favorite_dish" value="samosa_chat">Samosa Chat <br /> <br />
+                        <input type="submit" value="Submit"> <br />
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <section class="content">
+                <table>
+                    <caption><h3>[try these quick recipies]</h3></caption>
+
+                    <tr>
+                        <td>
+                            <h3>Garlic Naan</h3>
+                            <img class="listimg" src="dishes/dish1.jpg" alt="garlic naan" />
+                        </td>
+                        <td>
+                            <b>Ingedients:</b>
+                            <ul>
+                                <li>2 1/2 cups all purpose flour</li>
+                                <li>1/2 tsp baking powder</li>
+                                <li>1/4 tsp baking soda</li>
+                                <li>1 1/4 tsp salt</li>
+                                <li>2 tbs olive oil</li>
+                                <li>3/4 cup milk (or water)</li>
+                                <li>3 tbs greek yogurt</li>
+                                <li>2 tbs salted butter (or cocunut oil)</li>
+                                <li>1 garlic clove</li>
+                                <li>chopped fresh clinatro</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Steps:</b>
+                            <ol>
+                                <li>
+                                    In a large bowl mix all the dry ingredients then add the olive oil, milk, and Greek yougurt and mix until the dough comes together.
+                                    <br />If the dough is too try add more milk or if it's too dry add some flour.
+                                </li>
+                                <li>Set the dough aside in a lightly oiled bowl. Let it sit for 30 minutes at room temperature, covered.</li>
+                                <li>After the dough has sat, seperate the dough into six equal pieces. On a lighly floured rolling board, roll out each piece into an oval shape about 1/8 inch thick.</li>
+                                <li>Next, grate the garlic. In a saucepan, heat the butter and garlic over medium eat, cook for one to two minutes until the garlic starts to yellow (but not brown). Remove from heat.</li>
+                                <li>Heat a cast iron skillet on high. Add a rolled out piece to the head and cook until the top starts to bubble and the bottom is browning (about one minute), then flip and cook for another thirty seconds.</li>
+                                <li>Brush each piece in garlic butter and sprinkle chopped cilantro, serve warm.</li>
+                                <li>Enjoy!</li>
+                            </ol>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Vada</h3>
+                            <img class="listimg" src="dishes/dish4.jpg" alt="vada" />
+                        </td>
+                        <td>
+                            <b>Ingredients:</b>
+                            <ul>
+                                <li>1 cup ragda</li>
+                                <li>4 mini samosas</li>
+                                <li>1 tsp tamrind chutney</li>
+                                <li>2 tbs chopped onion</li>
+                                <li>2 tbs diced tomato</li>
+                                <li>1 pinch red chili powder</li>
+                                <li>1 pinch cumin poweder</li>
+                                <li>1 pinch chaat masala</li>
+                                <li>1/2 tsp finely chopped coriander leaves</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Steps:</b>
+                            <ol>
+                                <li>First heat the samosas, these can either be homemade left overs or frozen ones.</li>
+                                <li>Next take the ragda and pour it over the samosa, be sure to cover the whole samosa or it will not fully absorb the flavor</li>
+                                <li>Mix in the onion and tomato</li>
+                                <li>Top with tamrind chutney and green chutney</li>
+                                <li>Sprinkle chili powder, cumin powder and chaat masala</li>
+                                <li>If desired as a small scoop of curd for a slightly tangy flavor</li>
+                                <li>Enjoy!</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Jalapeno Mozzerlla Sticks</h3>
+                            <img class="listimg" src="dishes/dish5.jpg" alt="jalapeno mozzerlla sticks" />
+                        </td>
+                        <td>
+                            <b>Ingredients:</b>
+                            <ul>
+                                <li>1 cup planko bread crumbs</li>
+                                <li>1/4 tsp salt</li>
+                                <li>1/4 tsp garlic poweder</li>
+                                <li>8 sticks mozzerlla string cheese</li>
+                                <li>8 small jalapenos</li>
+                                <li>16 wonton wrappers</li>
+                                <li>bowl of water</li>
+                                <li>1 egg</li>
+                                <li>oil for frying</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <b>Steps:</b>
+                            <ol>
+                                <li>Combine the panko, salt and garlic powder together in a bowl</li>
+                                <li>Plae one piece of mozzerlla in one half of a jalapeno and wrap both with a wonton wrapper. Use the water to fold the wrapper around the mozzarella so it's closed.'</li>
+                                <li>Dip into the egg and cover with panko mixture to coat completely</li>
+                                <li>Repeat with the rest</li>
+                                <li>Place in a an air frier for about 15 minutes</li>
+                                <li>Enjoy!</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        Copyright &copy; 2022 Isha Index<br>
+        <a href="mailto:ishagsathe@gmail.com">ishagsathe@gmail.com</a>
+    </footer>
+
+
+</body>
+</html>
