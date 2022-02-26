@@ -289,31 +289,31 @@ footer {
 .note1 {
     background-image: url(notes/note1.png);
     float: left;
-    width: 425px;
-    height: 475px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
 }
 
 .note2 {
     background-image: url(notes/note2.png);
     float: left;
-    width: 425px;
-    height: 475px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
 }
 
 .note3 {
     background-image: url(notes/note3.png);
     float: left;
-    width: 425px;
-    height: 475px;
+    width: 350px;
+    height: 450px;
     background-size: cover;
 }
 
 .note4 {
     background-image: url(notes/note4.png);
     float: left;
-    width: 425px;
+    width: 400px;
     height: 475px;
     background-size: cover;
 }
